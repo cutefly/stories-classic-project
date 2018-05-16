@@ -23,6 +23,7 @@ import Vue from 'vue'
 import Login from './components/Login.vue'
 import Register from './components/Register.vue'
 import Stories from './components/Stories.vue'
+import Servers from './components/Servers.vue'
 // import HelloWorld from './components/HelloWorld'
 
 Vue.filter('capitalize', function (value) {
@@ -35,16 +36,18 @@ export default {
     // HelloWorld,
     Login,
     Register,
+    Servers,
     Stories
   },
   data () {
     return {
       pages: [
+        'login',
         'stories',
-        'register',
-        'login'
+        'servers',
+        'register'
       ],
-      activePage: 'stories'
+      activePage: 'servers'
     }
   },
   methods: {
